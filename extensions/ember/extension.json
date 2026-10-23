@@ -1,0 +1,120 @@
+{
+  "name": "ember",
+  "version": "0.1.0",
+  "description": "Warm theme that restyles every TUI region (demo)",
+  "themes": [
+    {
+      "name": "ember",
+      "base": "gruvbox",
+      "accent": "#FF8C42",
+      "banner": "#FF8C42",
+      "agent": "#F4C27A"
+    }
+  ],
+  "tui": {
+    "regions": {
+      "notice": {
+        "okMark": "✔",
+        "warnMark": "▲",
+        "errorMark": "✖",
+        "info": "muted"
+      },
+      "header": {
+        "mark": "◆",
+        "accent": "accent"
+      },
+      "userMessage": {
+        "bar": "┃",
+        "barFg": "#FF8C42"
+      },
+      "agentHeader": {
+        "mark": "◆",
+        "rule": "┄",
+        "fg": "agent",
+        "ruleFg": "border"
+      },
+      "answer": {
+        "lead": "•",
+        "leadFg": "accent"
+      },
+      "reasoning": {
+        "fg": "#8A7F72",
+        "italic": true
+      },
+      "toast": {
+        "mark": "◆",
+        "markFg": "accent"
+      },
+      "divider": {
+        "glyph": "┃",
+        "activeFg": "#FF8C42"
+      },
+      "scrollbar": {
+        "thumb": "┃",
+        "track": "│",
+        "thumbFg": "#FF8C42"
+      },
+      "toolCard": {
+        "dot": "◆",
+        "ok": "✔",
+        "error": "✖",
+        "result": "╰",
+        "rail": "┃",
+        "labelFg": "#F4C27A",
+        "railFg": "#5C4A3A"
+      },
+      "diff": {
+        "rail": "┃",
+        "corner": "┏",
+        "end": "┗",
+        "line": "━"
+      },
+      "delegation": {
+        "arrow": "↪",
+        "mark": "◆",
+        "done": "✔"
+      },
+      "thinking": {
+        "fg": "#FFB86B"
+      },
+      "footer": {
+        "separator": "│",
+        "separatorFg": "#5C4A3A",
+        "rule": "━",
+        "ruleFg": "#5C4A3A"
+      },
+      "input": {
+        "prompt": "▸",
+        "promptFg": "#FF8C42",
+        "continuation": "┃",
+        "placeholder": "what are we building?",
+        "cursorBg": "#FF8C42"
+      },
+      "palette": {
+        "selected": "▸",
+        "titleMark": "◆",
+        "selectedFg": "#FF8C42"
+      },
+      "modal": {
+        "title": "◆",
+        "selected": "▸",
+        "checked": "◆",
+        "unchecked": "◇"
+      },
+      "panel": {
+        "rule": "━",
+        "ruleFg": "#5C4A3A",
+        "focusBg": "#FF8C42"
+      },
+      "splash": {
+        "art": [
+          "  ▄▄▄ ▄   ▄ ▄▄▄  ▄▄▄ ▄▄▄",
+          "  █▄▄ █▀▄▀█ █▄▄█ █▄▄ █▄▄▀",
+          "  █▄▄ █   █ █▄▄█ █▄▄ █  █",
+          "  ember  -  a warm Mux"
+        ],
+        "artFg": "#FF8C42"
+      }
+    }
+  }
+}

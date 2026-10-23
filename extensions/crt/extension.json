@@ -1,0 +1,250 @@
+{
+  "name": "crt",
+  "version": "0.4.0",
+  "description": "Green-phosphor terminal: rule + $ marker input, pipe footer split left/right (demo)",
+  "themes": [
+    {
+      "name": "crt",
+      "base": "dark",
+      "step": "#33FF66",
+      "success": "#33FF66",
+      "warning": "#FFB000",
+      "error": "#FF4D4D",
+      "info": "#1F8F3F",
+      "muted": "#1F8F3F",
+      "accent": "#33FF66",
+      "prompt": "#B8FFC8",
+      "banner": "#33FF66",
+      "agent": "#7CFFA0",
+      "mdHeading": "#33FF66",
+      "mdCode": "#FFB000",
+      "mdLink": "#7CFFA0",
+      "mdQuote": "#1F8F3F",
+      "cardBg": "#0B2A14",
+      "inputBg": "#061A0C",
+      "diffAddBg": "#0E3A1A",
+      "diffDelBg": "#3A0E0E",
+      "diffHunkBg": "#0B2A14",
+      "codeBg": "#061A0C",
+      "inlineCodeBg": "#0B2A14",
+      "border": "#1F8F3F"
+    }
+  ],
+  "spinner": [
+    "[    ]",
+    "[=   ]",
+    "[==  ]",
+    "[=== ]",
+    "[ ===]",
+    "[  ==]",
+    "[   =]"
+  ],
+  "thinking": {
+    "intervalMs": 90,
+    "quips": [
+      "COMPUTING",
+      "PROCESSING",
+      "SEEKING",
+      "CALCULATING",
+      "CONSULTING MAINFRAME"
+    ],
+    "quipIntervalMs": 1500,
+    "suffix": " ..."
+  },
+  "toolLabels": {
+    "read": "READ",
+    "write": "WRITE",
+    "edit": "PATCH",
+    "execute": "EXEC",
+    "search": "SCAN",
+    "list": "LS"
+  },
+  "splash": [
+    "READY.",
+    "SYSTEM ONLINE. AWAITING INPUT.",
+    "LOAD \"*\",8,1"
+  ],
+  "footer": {
+    "template": "{model} {context} || {calls} {turn} {mode}"
+  },
+  "markdown": {
+    "tableBorder": "ascii",
+    "bullet": "-",
+    "rule": "="
+  },
+  "tui": {
+    "glyphs": "ascii",
+    "regions": {
+      "notice": {
+        "okMark": "OK",
+        "warnMark": "!!",
+        "errorMark": "XX",
+        "ok": "success",
+        "warn": "warning",
+        "error": "error",
+        "info": "muted"
+      },
+      "header": {
+        "mark": ">>",
+        "accent": "accent",
+        "template": "READY. {agent} ON {model} ({tools})"
+      },
+      "userMessage": {
+        "bar": ">",
+        "barFg": "#FFB000",
+        "fg": "#B8FFC8"
+      },
+      "agentHeader": {
+        "mark": "#",
+        "rule": "=",
+        "fg": "accent",
+        "ruleFg": "#1F8F3F"
+      },
+      "answer": {
+        "lead": "<",
+        "leadFg": "#1F8F3F"
+      },
+      "reasoning": {
+        "fg": "#1F8F3F",
+        "italic": false
+      },
+      "toast": {
+        "mark": "!",
+        "markFg": "#FFB000",
+        "fg": "accent"
+      },
+      "divider": {
+        "glyph": ":",
+        "fg": "#1F8F3F",
+        "activeFg": "#FFB000"
+      },
+      "scrollbar": {
+        "thumb": "#",
+        "track": ":",
+        "thumbFg": "#33FF66",
+        "trackFg": "#1F8F3F"
+      },
+      "toolCard": {
+        "dot": "$",
+        "ok": "+",
+        "error": "X",
+        "result": "=",
+        "rail": "|",
+        "pendingFg": "#FFB000",
+        "okFg": "#33FF66",
+        "errorFg": "#FF4D4D",
+        "labelFg": "#FFB000",
+        "railFg": "#1F8F3F",
+        "bg": "cardBg",
+        "style": "gutter",
+        "gutter": "|"
+      },
+      "diff": {
+        "rail": "|",
+        "corner": "+",
+        "end": "+",
+        "line": "=",
+        "addFg": "#33FF66",
+        "delFg": "#FF4D4D",
+        "ctxFg": "#1F8F3F",
+        "gutterFg": "#1F8F3F"
+      },
+      "delegation": {
+        "arrow": ">",
+        "branch": "\\",
+        "mark": "@",
+        "done": "+",
+        "failed": "X",
+        "fg": "#FFB000"
+      },
+      "thinking": {
+        "fg": "#FFB000"
+      },
+      "footer": {
+        "separator": "::",
+        "separatorFg": "#1F8F3F",
+        "style": "pipe",
+        "position": "above"
+      },
+      "input": {
+        "prompt": "$",
+        "promptFg": "#33FF66",
+        "continuation": ">",
+        "continuationFg": "#1F8F3F",
+        "placeholder": "_",
+        "placeholderFg": "#1F8F3F",
+        "fg": "#B8FFC8",
+        "cursorFg": "black",
+        "cursorBg": "#33FF66",
+        "rail": "|",
+        "railFg": "#33FF66"
+      },
+      "palette": {
+        "selected": ">",
+        "selectedFg": "#FFB000",
+        "itemFg": "#33FF66",
+        "titleMark": "#",
+        "titleFg": "#33FF66",
+        "up": "^",
+        "down": "v"
+      },
+      "modal": {
+        "title": "?",
+        "titleFg": "#FFB000",
+        "selected": ">",
+        "selectedFg": "#FFB000",
+        "checked": "X",
+        "checkedFg": "#33FF66",
+        "unchecked": "_"
+      },
+      "panel": {
+        "rule": "=",
+        "ruleFg": "#1F8F3F",
+        "tabFg": "#1F8F3F",
+        "tabActiveFg": "#33FF66",
+        "focusFg": "black",
+        "focusBg": "#FFB000",
+        "header": "rule",
+        "selectedStyle": "fill",
+        "selectedBg": "#0E3A1A",
+        "frame": "ascii",
+        "frameFg": "#1F8F3F"
+      },
+      "splash": {
+        "art": [
+          "  ######  ######  ########",
+          " ##      ##   ##    ##",
+          " ##      ######     ##      MUX // PHOSPHOR",
+          " ##      ##  ##     ##",
+          "  ######  ##   ##    ##     64K RAM SYSTEM  38911 BASIC BYTES FREE"
+        ],
+        "artFg": "#33FF66",
+        "accentFg": "#FFB000",
+        "frame": "ascii",
+        "borderFg": "#1F8F3F",
+        "columns": "logo,recent",
+        "padY": 0,
+        "layout": [
+          "art",
+          "text",
+          "recent | tips commands"
+        ],
+        "text": [
+          "**** MUX-SWARM {version} ****  READY."
+        ],
+        "textFg": "#33FF66",
+        "headings": "rule",
+        "headingFg": "#FFB000",
+        "titleFg": "#33FF66",
+        "bullet": ">",
+        "bulletFg": "#1F8F3F",
+        "recentCount": 3
+      },
+      "compose": {
+        "shape": "rule",
+        "rule": "=",
+        "borderFg": "#1F8F3F"
+      }
+    }
+  }
+}

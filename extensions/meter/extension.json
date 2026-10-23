@@ -1,0 +1,22 @@
+{
+ "name": "meter",
+ "description": "Docked panel demo: /meter side|band|auto|screen",
+ "process": {
+  "command": "python",
+  "args": [
+   "-u",
+   "main.py"
+  ]
+ },
+ "events": [
+  "tool_call",
+  "turn_end"
+ ],
+ "commands": [
+  {
+   "name": "meter",
+   "description": "Open the meter panel (side|band|auto|screen)",
+   "immediate": true
+  }
+ ]
+}

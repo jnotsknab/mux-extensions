@@ -1,0 +1,233 @@
+{
+  "name": "hearth",
+  "version": "0.3.5",
+  "description": "Ember-palette rounded outline UI: boxed input, full status line, themed prompts, panels and animations",
+  "themes": [
+    {
+      "name": "hearth",
+      "base": "gruvbox",
+      "accent": "#FF8C42",
+      "banner": "#FF8C42",
+      "agent": "#F4C27A",
+      "inputBg": "#3C3836",
+      "cardBg": "#32302F",
+      "info": "#F4C27A",
+      "step": "#FF8C42",
+      "border": "#5C4A3A",
+      "mdLink": "#FF8C42",
+      "mdHeading": "#FF8C42",
+      "mdCode": "#F4C27A",
+      "muted": "#A89984",
+      "prompt": "#FF8C42"
+    }
+  ],
+  "footer": {
+    "template": "{turn} {context} {cached} {calls} || {test-ext.music} {test-ext.artist} {cusage.q} {model} {effort}"
+  },
+  "tui": {
+    "regions": {
+      "compose": {
+        "shape": "box",
+        "border": "rounded",
+        "padX": 1,
+        "borderFg": "#FF8C42",
+        "gap": 1
+      },
+      "footer": {
+        "position": "border",
+        "style": "pipe",
+        "separatorFg": "#5C4A3A",
+        "fill": "rule",
+        "ruleFg": "#5C4A3A"
+      },
+      "input": {
+        "prompt": "▸",
+        "promptFg": "#FF8C42",
+        "placeholder": "what are we building?",
+        "cursorBg": "#FF8C42"
+      },
+      "userMessage": {
+        "bar": "┃",
+        "barFg": "#FF8C42"
+      },
+      "header": {
+        "template": "◆  {agent} · {model} · {provider} · {tools}",
+        "frame": "box",
+        "accent": "#FF8C42"
+      },
+      "toolCard": {
+        "style": "gutter",
+        "gutter": "┊",
+        "railFg": "#5C4A3A",
+        "labelFg": "#F4C27A"
+      },
+      "agentHeader": {
+        "mark": "◆",
+        "rule": "┄",
+        "ruleFg": "#8A5A30",
+        "fg": "#FF8C42"
+      },
+      "answer": {
+        "lead": "•",
+        "leadFg": "#FF8C42"
+      },
+      "splash": {
+        "frame": "none",
+        "art": [
+          "        ▟▙",
+          "       ▟██▙",
+          "      ▟████▙",
+          "     ▟██▛▜██▙",
+          "    ▐███▌▐███▌",
+          "    ▐████████▌",
+          "     ▜██████▛",
+          "  ▂▂▂▂▀▀▀▀▀▀▂▂▂▂",
+          "  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀"
+        ],
+        "artFg": "#FF8C42",
+        "align": "center",
+        "contentAlign": "center",
+        "layout": [
+          "art",
+          "title message",
+          "recent"
+        ],
+        "divider": "gap",
+        "title": "mux-swarm {version}",
+        "titleFg": "#FF8C42",
+        "headings": "none",
+        "bullet": "◆",
+        "bulletFg": "#FF8C42",
+        "recentCount": 3,
+        "padY": 1
+      },
+      "panel": {
+        "header": "strip",
+        "headerBg": "#3C3836",
+        "selectedStyle": "fill",
+        "selectedBg": "#3C3836",
+        "hints": "strip",
+        "hintBg": "#282828",
+        "frame": "rounded",
+        "frameFg": "#5C4A3A",
+        "rule": "─",
+        "ruleFg": "#5C4A3A",
+        "tabFg": "#A89984",
+        "tabActiveFg": "#FF8C42",
+        "focusFg": "#282828",
+        "focusBg": "#FF8C42"
+      },
+      "palette": {
+        "selected": "▸",
+        "selectedFg": "#FF8C42",
+        "itemFg": "text",
+        "titleMark": "◆",
+        "titleFg": "#F4C27A"
+      },
+      "modal": {
+        "title": "◆",
+        "titleFg": "#FF8C42",
+        "selected": "▸",
+        "selectedFg": "#FF8C42",
+        "checked": "◆",
+        "checkedFg": "#FF8C42",
+        "unchecked": "◇"
+      },
+      "block": {
+        "rail": "┊",
+        "railFg": "#5C4A3A",
+        "titleFg": "#FF8C42"
+      },
+      "notice": {
+        "okMark": "◆",
+        "ok": "#FF8C42",
+        "warnMark": "◆",
+        "warn": "#F4C27A",
+        "errorMark": "◆",
+        "error": "red",
+        "info": "#A89984"
+      },
+      "toast": {
+        "mark": "◆",
+        "markFg": "#FF8C42",
+        "fg": "#F4C27A"
+      },
+      "reasoning": {
+        "fg": "#8A7560",
+        "italic": true
+      },
+      "thinking": {
+        "fg": "#F4C27A"
+      },
+      "delegation": {
+        "arrow": "→",
+        "branch": "╰",
+        "mark": "◆",
+        "fg": "#F4C27A"
+      },
+      "diff": {
+        "corner": "╭",
+        "end": "╰",
+        "line": "─",
+        "rail": "┊",
+        "railFg": "#5C4A3A"
+      },
+      "divider": {
+        "glyph": "┊",
+        "fg": "#5C4A3A",
+        "activeFg": "#FF8C42"
+      },
+      "scrollbar": {
+        "thumbFg": "#5C4A3A",
+        "trackFg": "#32302F"
+      }
+    }
+  },
+  "thinking": {
+    "frames": [
+      "▅▇█▇▅▂▁▂",
+      "▃▆██▆▃▁▁",
+      "▂▅▇█▇▅▂▁",
+      "▁▃▆██▆▃▁",
+      "▁▂▅▇█▇▅▂",
+      "▁▁▃▆██▆▃",
+      "▂▁▂▅▇█▇▅",
+      "▃▁▁▃▆██▆",
+      "▄▂▁▂▅▇█▇",
+      "▆▃▁▁▃▆██",
+      "▇▄▂▁▂▅▇█",
+      "█▆▃▁▁▃▆█",
+      "█▇▄▂▁▂▅▇",
+      "██▆▃▁▁▃▆",
+      "▇█▇▄▂▁▂▅",
+      "▆██▆▃▁▁▃"
+    ],
+    "intervalMs": 90,
+    "quips": [
+      "Flowing",
+      "Drifting",
+      "Riding the current",
+      "Letting it settle",
+      "Following the thread",
+      "Finding the rhythm",
+      "Going with it"
+    ],
+    "quipIntervalMs": 3000,
+    "shuffle": true,
+    "suffix": "..."
+  },
+  "toolLabels": {
+    "read": "Reading",
+    "search": "Hunting",
+    "write": "Forging",
+    "edit": "Shaping",
+    "list": "Surveying",
+    "fetch": "Fetching",
+    "execute": "Firing"
+  },
+  "markdown": {
+    "tableBorder": "rounded",
+    "bullet": "◆",
+    "rule": "┄"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "name": "bubble",
+  "version": "0.3.0",
+  "description": "Chat-bubble input with a status strip below (demo)",
+  "themes": [
+    {
+      "name": "bubble",
+      "base": "catppuccin-mocha",
+      "inputBg": "#2A2E3F",
+      "cardBg": "#1E2030"
+    }
+  ],
+  "footer": {
+    "template": "{context} {turn} || {model} {effort}"
+  },
+  "tui": {
+    "regions": {
+      "compose": {
+        "shape": "bubble",
+        "padX": 1,
+        "fill": "#2A2E3F",
+        "gap": 1
+      },
+      "footer": {
+        "position": "below",
+        "style": "space",
+        "strip": true,
+        "bg": "#181926",
+        "fill": "space"
+      },
+      "input": {
+        "prompt": "›",
+        "placeholder": "message…"
+      },
+      "userMessage": {
+        "bar": "▐",
+        "barFg": "accent"
+      },
+      "toolCard": {
+        "style": "box"
+      },
+      "header": {
+        "template": "{agent}  ·  {model}"
+      },
+      "splash": {
+        "frame": "none",
+        "align": "center",
+        "columns": "logo",
+        "layout": [
+          "art",
+          "title message",
+          "recent"
+        ],
+        "contentAlign": "center",
+        "title": "mux-swarm {version}",
+        "headings": "none",
+        "bullet": "•",
+        "recentCount": 3,
+        "padY": 1,
+        "divider": "gap"
+      },
+      "panel": {
+        "header": "strip",
+        "headerAlign": "center",
+        "headerBg": "#2A2E3F",
+        "selectedStyle": "fill",
+        "selectedBg": "#2A2E3F"
+      }
+    }
+  }
+}

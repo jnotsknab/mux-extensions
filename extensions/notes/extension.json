@@ -1,0 +1,18 @@
+{
+ "name": "notes",
+ "description": "Full-screen panel demo: /notes",
+ "process": {
+  "command": "python",
+  "args": [
+   "-u",
+   "main.py"
+  ]
+ },
+ "commands": [
+  {
+   "name": "notes",
+   "description": "Open the notes panel",
+   "immediate": true
+  }
+ ]
+}

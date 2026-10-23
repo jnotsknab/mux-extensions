@@ -1,0 +1,14 @@
+{
+ "name": "cusage",
+ "description": "Live Claude subscription usage (5h / 7d) in the TUI footer",
+ "process": {
+  "command": "python",
+  "args": [
+   "-u",
+   "main.py"
+  ]
+ },
+ "events": [
+  "turn_end"
+ ]
+}
